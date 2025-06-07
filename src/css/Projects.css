@@ -1,0 +1,146 @@
+/* ===== Projects Section ===== */
+.projects-section {
+  background: linear-gradient(135deg, #1a0a13 0%, #2a0e1d 100%);
+  padding: 4rem 1rem;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Section Title */
+.projects-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #FCF259;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(252, 242, 89, 0.3);
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  z-index: 2;
+}
+
+/* Project Card */
+.project-card {
+  background: linear-gradient(to right, #4A102A, #85193C);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Active state - shown on scroll */
+.project-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transition Delays */
+.project-card:nth-child(1).active {
+  transition-delay: 0.1s;
+}
+.project-card:nth-child(2).active {
+  transition-delay: 0.3s;
+}
+.project-card:nth-child(3).active {
+  transition-delay: 0.5s;
+}
+.project-card:nth-child(4).active {
+  transition-delay: 0.7s;
+}
+.project-card:nth-child(5).active {
+  transition-delay: 0.9s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(252, 242, 89, 0.15);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* Content Area */
+.project-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+/* Project Name */
+.project-name {
+  font-size: 1.4rem;
+  color: #FCF259;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Project Description (unordered list) */
+.project-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  margin-left: 20px; /* Adds indentation for the list */
+}
+
+/* Style for each list item in the description */
+.project-description li {
+  margin-bottom: 0.8rem; /* Adds space between list items */
+  font-weight: 400;
+}
+
+/* Project Links (Removed in the latest code, but added here for consistency if you decide to use later) */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #FCF259 0%, #C5172E 100%);
+  color: #1a0a13;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(252, 242, 89, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(252, 242, 89, 0.4);
+}
+
+/* ===== Responsive Layout ===== */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

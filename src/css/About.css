@@ -1,0 +1,223 @@
+/* ===== About Section Base ===== */
+.about-section {
+  background: linear-gradient(135deg, #1a0a13 0%, #2a0e1d 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* ===== Grid Container ===== */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  padding: 0.5rem;
+}
+
+/* ===== Text Section ===== */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.title-wrapper {
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.about-title span {
+  display: block;
+}
+
+.about-heading {
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.about-description {
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  color: #FCF259;
+  font-weight: 700;
+}
+
+/* ===== Button Style ===== */
+.button-wrapper {
+  margin-top: 1.2rem;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.8rem;
+  background: linear-gradient(90deg, #FCF259 0%, #C5172E 100%);
+  color: #1a0a13;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(252, 242, 89, 0.3);
+  font-size: 0.95rem;
+}
+
+.about-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(252, 242, 89, 0.4);
+}
+
+.button-icon {
+  font-size: 1.1em;
+  transition: transform 0.3s ease;
+}
+
+.about-button:hover .button-icon {
+  transform: translateY(3px);
+}
+
+.image-frame {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  background: transparent; /* Ensure the frame doesn't add background */
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Prevents image from being cropped */
+  object-position: top; /* Aligns head correctly */
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  background: transparent; /* Supports transparent PNG/WebP */
+}
+
+
+/* Glowing Background */
+.image-glow {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(252, 242, 89, 0.2), rgba(197, 23, 46, 0.15), rgba(133, 25, 60, 0.1));
+  filter: blur(45px);
+  z-index: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ===== Decorative Blurred Circles ===== */
+.about-accent {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(252, 242, 89, 0.1) 0%, rgba(133, 25, 60, 0) 70%);
+  z-index: 0;
+}
+
+.about-accent-1 {
+  top: -40px;
+  right: -40px;
+}
+
+.about-accent-2 {
+  bottom: -40px;
+  left: -40px;
+  opacity: 0.6;
+}
+
+/* ===== Media Queries ===== */
+
+/* Tablet layout */
+@media (min-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.0rem;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-image {
+    max-width: 320px;
+  }
+
+  .image-glow {
+    top: -25%;
+    left: -25%;
+    width: 130%;
+    height: 130%;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .about-image {
+    max-width: 380px;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
