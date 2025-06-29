@@ -73,6 +73,7 @@ const Skills = () => {
                 loading="lazy"
               />
               <span className="skill-name">{skill.name}</span>
+              <div><span className="skill-description">{skill.description}</span></div>
             </div>
           </div>
         ))}

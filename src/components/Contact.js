@@ -52,7 +52,7 @@ const Contact = () => {
     try {
       // 1. Send message to you
       await emailjs.sendForm(
-        "service_6eih1ha",       // ✅ Your Service ID
+        "service_nv97mqn",       // ✅ Your Service ID
         "template_zc20zdf",      // ✅ Inbox Template ID
         form.current,
         "_zkdCZCAzlxxbJYoC"      // ✅ Your Public Key
@@ -60,7 +60,7 @@ const Contact = () => {
 
       // 2. Send auto-reply to user
       await emailjs.send(
-        "service_6eih1ha",       // ✅ Same Service ID
+        "service_nv97mqn",       // ✅ Same Service ID
         "template_p5sbz6h",      // ✅ Auto-Reply Template ID (same)
         {
           name: formData.get("name"),

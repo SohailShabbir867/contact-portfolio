@@ -12,7 +12,7 @@ const projects = [
         <li>Provides smooth user experience across all devices</li>
       </ul>
     ),
-    image: require("../assests/image1.png"),
+    image: require("../assests/imagep.jpg"),
   },
   {
     title: "E-commerce UI",
@@ -25,6 +25,8 @@ const projects = [
       </ul>
     ),
     image: require("../assests/image2.png"),
+
+  
   },
   {
     title: "Weather App",
@@ -37,6 +39,7 @@ const projects = [
       </ul>
     ),
     image: require("../assests/image3.png"),
+
   },
 ];
 
@@ -76,6 +79,7 @@ const Projects = () => {
             <div className="project-content">
               <h3 className="project-name">{project.title}</h3>
               <div className="project-description">{project.description}</div>
+              <div className="project-links">{project.button}</div>
             </div>
           </div>
         ))}

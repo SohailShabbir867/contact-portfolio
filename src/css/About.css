@@ -2,10 +2,9 @@
 .about-section {
   background: linear-gradient(135deg, #1a0a13 0%, #2a0e1d 100%);
   color: white;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 3rem 1rem 1rem; /* increased top padding */
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -104,41 +103,30 @@
   transform: translateY(3px);
 }
 
+/* ===== Image Frame & Image ===== */
 .image-frame {
-  position: relative;
-  border-radius: 1rem;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  background: transparent; /* Ensure the frame doesn't add background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  box-shadow: 0 0 25px rgba(252, 242, 89, 0.25); /* glow */
+  animation: float 4s ease-in-out infinite;
 }
 
 .image-frame img {
-  width: 100%;
-  height: auto;
-  object-fit: contain; /* Prevents image from being cropped */
-  object-position: top; /* Aligns head correctly */
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center center;
   display: block;
-  aspect-ratio: 1 / 1;
-  border-radius: 1rem;
-  background: transparent; /* Supports transparent PNG/WebP */
 }
 
-
-/* Glowing Background */
-.image-glow {
-  position: absolute;
-  top: -30%;
-  left: -30%;
-  width: 140%;
-  height: 140%;
-  background: radial-gradient(circle, rgba(252, 242, 89, 0.2), rgba(197, 23, 46, 0.15), rgba(133, 25, 60, 0.1));
-  filter: blur(45px);
-  z-index: 0;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
+/* ===== Glowing Background ===== */
 /* ===== Decorative Blurred Circles ===== */
 .about-accent {
   position: absolute;
@@ -161,8 +149,6 @@
 }
 
 /* ===== Media Queries ===== */
-
-/* Tablet layout */
 @media (min-width: 768px) {
   .about-container {
     grid-template-columns: 1fr 1fr;
@@ -179,8 +165,15 @@
     margin-right: 0;
   }
 
-  .about-image {
-    max-width: 320px;
+  .about-image,
+  .image-frame {
+    width: 380px;
+    height: 380px;
+  }
+
+  .image-frame img {
+    width: 120%;
+    height: 120%;
   }
 
   .image-glow {
@@ -191,12 +184,7 @@
   }
 }
 
-/* Larger screens */
 @media (min-width: 1024px) {
-  .about-image {
-    max-width: 380px;
-  }
-
   .about-title {
     font-size: 3rem;
   }
@@ -207,6 +195,17 @@
 
   .about-description {
     font-size: 1.1rem;
+  }
+
+  .about-image,
+  .image-frame {
+    width: 420px;
+    height: 420px;
+  }
+
+  .image-frame img {
+    width: 120%;
+    height: 120%;
   }
 }
 
@@ -221,3 +220,5 @@
     transform: translateY(0);
   }
 }
+
+
