@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/contact-portfolio/static/css/main.260ed895.css",
-    "main.js": "/contact-portfolio/static/js/main.3872b6c9.js",
+    "main.css": "/contact-portfolio/static/css/main.d484218d.css",
+    "main.js": "/contact-portfolio/static/js/main.8ddc9419.js",
     "static/media/image3.png": "/contact-portfolio/static/media/image3.5ed889b9567076a27725.png",
-    "static/media/my image.png": "/contact-portfolio/static/media/my image.83dd1e99583f5f989df8.png",
     "static/media/image2.png": "/contact-portfolio/static/media/image2.6c541faffaa007f56412.png",
-    "static/media/image1.png": "/contact-portfolio/static/media/image1.9b88bc703940980981de.png",
+    "static/media/imagep.jpg": "/contact-portfolio/static/media/imagep.24fb64c405f8dd93dc22.jpg",
+    "static/media/my image.png": "/contact-portfolio/static/media/my image.28a285795c0bd161045a.png",
     "static/media/c.png": "/contact-portfolio/static/media/c.855d6e4f3cb1cdf0dc88.png",
     "static/media/linux.png": "/contact-portfolio/static/media/linux.150571d1bebccc801b94.png",
     "static/media/node.png": "/contact-portfolio/static/media/node.1b5a1a4a2a41befdac7a.png",
@@ -21,11 +21,11 @@
     "static/media/bootstrap.png": "/contact-portfolio/static/media/bootstrap.35fec8a26dc14b418f95.png",
     "static/media/capcut.png": "/contact-portfolio/static/media/capcut.eea7e4a60982be32e685.png",
     "index.html": "/contact-portfolio/index.html",
-    "main.260ed895.css.map": "/contact-portfolio/static/css/main.260ed895.css.map",
-    "main.3872b6c9.js.map": "/contact-portfolio/static/js/main.3872b6c9.js.map"
+    "main.d484218d.css.map": "/contact-portfolio/static/css/main.d484218d.css.map",
+    "main.8ddc9419.js.map": "/contact-portfolio/static/js/main.8ddc9419.js.map"
   },
   "entrypoints": [
-    "static/css/main.260ed895.css",
-    "static/js/main.3872b6c9.js"
+    "static/css/main.d484218d.css",
+    "static/js/main.8ddc9419.js"
   ]
 }
