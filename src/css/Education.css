@@ -1,0 +1,104 @@
+.education-section {
+  background: linear-gradient(135deg, #1a0a13 0%, #2a0e1d 100%);
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.education-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #fcf259;
+  text-shadow: 0 0 12px rgba(252, 242, 89, 0.4);
+  position: relative;
+  display: inline-block;
+}
+
+.education-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fcf259;
+  margin: 8px auto 0;
+  border-radius: 5px;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: linear-gradient(to right, #4A102A, #85193C);
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(252, 242, 89, 0.15);
+  text-align: left;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+.education-icon {
+  font-size: 40px;
+  color: #fcf259;
+  flex-shrink: 0;
+}
+
+.edu-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.4rem;
+
+}
+
+.edu-info {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.5;
+  
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+
+  .education-icon {
+    font-size: 35px;
+  }
+}
+.education-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transition Delays */
+.education-card:nth-child(1).active { transition-delay: 0.1s; }
+.education-card:nth-child(2).active { transition-delay: 0.3s; }
+.education-card:nth-child(3).active { transition-delay: 0.5s; }
+.education-card:nth-child(4).active { transition-delay: 0.7s; }
+.education-card:nth-child(5).active { transition-delay: 0.9s; }
+
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(252, 242, 89, 0.15);
+}
