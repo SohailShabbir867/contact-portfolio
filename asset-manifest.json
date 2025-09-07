@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/contact-portfolio/static/css/main.81e6107a.css",
-    "main.js": "/contact-portfolio/static/js/main.86c26ce4.js",
+    "main.js": "/contact-portfolio/static/js/main.0d058dd1.js",
     "static/media/Foodgarden.png": "/contact-portfolio/static/media/Foodgarden.c8cdcfdb6fda50051d33.png",
     "static/media/Ecommerce.png": "/contact-portfolio/static/media/Ecommerce.3ab070d4bcbd0808976e.png",
     "static/media/imagep.jpg": "/contact-portfolio/static/media/imagep.24fb64c405f8dd93dc22.jpg",
@@ -23,10 +23,10 @@
     "static/media/capcut.png": "/contact-portfolio/static/media/capcut.eea7e4a60982be32e685.png",
     "index.html": "/contact-portfolio/index.html",
     "main.81e6107a.css.map": "/contact-portfolio/static/css/main.81e6107a.css.map",
-    "main.86c26ce4.js.map": "/contact-portfolio/static/js/main.86c26ce4.js.map"
+    "main.0d058dd1.js.map": "/contact-portfolio/static/js/main.0d058dd1.js.map"
   },
   "entrypoints": [
     "static/css/main.81e6107a.css",
-    "static/js/main.86c26ce4.js"
+    "static/js/main.0d058dd1.js"
   ]
 }
