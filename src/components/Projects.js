@@ -39,7 +39,7 @@ const projects = [
       </ul>
     ),
     image: require("../assests/Ecommerce.png"),
-        button:( <a href="https://sohailshabbir867.github.io/Hassan-Mahmood/"><button className="about-button">View Project</button></a>)
+        button:( <a href="https://sohailshabbir867.github.io/eCommerce-website/"><button className="about-button">View Project</button></a>)
 
   
   },
@@ -54,7 +54,7 @@ const projects = [
       </ul>
     ),
     image: require("../assests/Weatherapp.png"),
-        button:( <a href="https://sohailshabbir867.github.io/Hassan-Mahmood/"><button className="about-button">View Project</button></a>)
+        button:( <a href="https://sohailshabbir867.github.io/my-app/"><button className="about-button">View Project</button></a>)
 
   },
 ];
