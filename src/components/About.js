@@ -38,7 +38,7 @@ const About = () => {
           </p>
           <div className="button-wrapper">
             <a
-              href="https://drive.google.com/file/d/1AiUq4PPL32T7KlOxEJoG3Q-6QtKk__aX/view?usp=drive_link"
+              href="https://drive.google.com/open?id=1oSq66xGCvFkGilD825Z1ELruLBSweh2x&usp=drive_fs"
               className="about-button"
               aria-label="Download CV"
             >
